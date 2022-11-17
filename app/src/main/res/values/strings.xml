@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">StockManager</string>
+    <string name="logo_desc">This is the logo of the application</string>
+    <string name="caption_under_logo">Let\'s get started...</string>
+    <string name="login">Login</string>
+    <string name="showPassword">Show password</string>
+    <string name="forgotPwd">Forgot password?</string>
+    <string name="SignInWith">sign in with</string>
+    <string name="emailCaption"><font size="13">Enter email address</font></string>
+    <string name="password"><font size="13">Password</font></string>
+    <string name="account">Don\'t have an account?</string>
+    <string name="signup">Signup</string>
 </resources>
