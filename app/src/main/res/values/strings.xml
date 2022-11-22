@@ -10,4 +10,11 @@
     <string name="password"><font size="13">Password</font></string>
     <string name="account">Don\'t have an account?</string>
     <string name="signup">Signup</string>
+    <string name="image_desc">Image description</string>
+    <string name="createAccount">create Account</string>
+    <string name="role"><font size="13">Role</font></string>
+    <string name="confirmPassword"><font size="13">Confirm Password</font></string>
+    <string name="AlreadyHaveAccount">Already have an account?</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="submit">Submit</string>
 </resources>
