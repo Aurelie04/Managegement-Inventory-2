@@ -17,4 +17,23 @@
     <string name="AlreadyHaveAccount">Already have an account?</string>
     <string name="ForgotPassword">Forgot Password?</string>
     <string name="submit">Submit</string>
+    <string name="purchase_entry">Purchase entry</string>
+    <string name="item_name">Name</string>
+    <string name="category">Category</string>
+    <string name="price_bought">P.Bought</string>
+    <string name="quantity">Quantity</string>
+    <string name="price_sold">P.sold</string>
+    <string name="date">Date</string>
+    <string name="bar_code">Bar code</string>
+    <string name="scan">Scan</string>
+    <string name="add">ADD</string>
+    <string name="enter_item_name">Enter item name</string>
+    <string name="select_category">Select category</string>
+    <string name="enter_purchase_price">Enter purchase price</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="enter_price_for_sale">Enter saling price</string>
+    <string name="date_entry">Date entry</string>
+    <string name="scan_bar_code">Scan bar/QR code</string>
+
+
 </resources>

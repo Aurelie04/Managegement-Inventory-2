@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".EntryActivity">
+    <include layout="@layout/about_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/purchase_entry_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="-170dp"
+                android:text="@string/purchase_entry" />
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="-370dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_name" />
+
+            <EditText
+                android:id="@+id/enterItem"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginRight="0dp"
+                android:hint="@string/enter_item_name"
+                android:textColorHint="#5C555252"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="-340dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/category"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/enterCategory"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/select_category"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/price_bought"
+                android:layout_marginTop="350dp"
+                android:layout_marginLeft="-345dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="@string/price_bought" />
+
+            <EditText
+                android:id="@+id/priceBought"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/enter_purchase_price"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="-345dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="@string/quantity" />
+            <EditText
+                android:id="@+id/enterQuantity"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/enter_quantity"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/priceSold"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="-340dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/price_sold" />
+            <EditText
+                android:id="@+id/salingPrice"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/enter_price_for_sale"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/dateEntry"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-340dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/date" />
+            <EditText
+                android:id="@+id/enterDate"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/date_entry"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/barCode"
+                android:layout_marginTop="550dp"
+                android:layout_marginLeft="-340dp"
+                android:layout_marginRight="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/bar_code" />
+            <EditText
+                android:id="@+id/scanBarCode"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginRight="0dp"
+                android:autofillHints=""
+                android:hint="@string/scan_bar_code"
+                android:textColorHint="#600C0A0A"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-250dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginEnd="-200dp"
+                android:backgroundTint="#4FB7C5"
+                android:textColorHighlight="#0D2C30"
+                android:textColorHint="#339BA8">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
