@@ -5,45 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
+    android:background="#F3E2E2"
+    android:backgroundTint="@color/white"
     tools:context=".EntryActivity">
-    <include layout="@layout/about_toolbar"/>
+
+    <include layout="@layout/about_toolbar" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/purchase_entry_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="40dp"
                 android:layout_gravity="center"
-                android:textSize="36sp"
-                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginRight="0dp"
+                android:padding="40dp"
+                android:text="@string/purchase_entry"
                 android:textColor="@color/black"
-                android:layout_marginTop="-170dp"
-                android:text="@string/purchase_entry" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/item_name"
-                android:layout_marginTop="250dp"
-                android:layout_marginLeft="-370dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/item_name" />
+                android:layout_marginLeft="-400dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/item_name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/enterItem"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="250dp"
-                android:layout_marginRight="0dp"
+                android:layout_marginRight="-0dp"
                 android:hint="@string/enter_item_name"
                 android:textColorHint="#5C555252"
                 android:textSize="20sp" />
@@ -62,50 +71,53 @@
             <EditText
                 android:id="@+id/enterCategory"
                 android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="12dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="300dp"
                 android:layout_marginRight="0dp"
                 android:autofillHints=""
                 android:hint="@string/select_category"
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/price_bought"
-                android:layout_marginTop="350dp"
-                android:layout_marginLeft="-345dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
-                android:text="@string/price_bought" />
+                android:layout_marginLeft="-340dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/price_bought"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/priceBought"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="12dp"
+                android:layout_width="220dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="350dp"
                 android:layout_marginRight="0dp"
                 android:autofillHints=""
                 android:hint="@string/enter_purchase_price"
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/quantity"
-                android:layout_marginTop="400dp"
-                android:layout_marginLeft="-345dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
-                android:text="@string/quantity" />
+                android:layout_marginLeft="-315dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/quantity"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/enterQuantity"
-                android:layout_width="250dp"
-                android:layout_height="45dp"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="400dp"
                 android:layout_marginRight="0dp"
@@ -113,62 +125,68 @@
                 android:hint="@string/enter_quantity"
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/priceSold"
-                android:layout_marginTop="450dp"
-                android:layout_marginLeft="-340dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
-                android:text="@string/price_sold" />
+                android:layout_marginLeft="-315dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/price_sold"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/salingPrice"
-                android:layout_width="250dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="35dp"
+                android:layout_width="220dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="450dp"
                 android:layout_marginRight="0dp"
                 android:autofillHints=""
                 android:hint="@string/enter_price_for_sale"
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/dateEntry"
-                android:layout_marginTop="500dp"
-                android:layout_marginLeft="-340dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
-                android:text="@string/date" />
+                android:layout_marginLeft="-312dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/date"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/enterDate"
-                android:layout_width="250dp"
-                android:layout_height="48dp"
-                android:layout_marginLeft="45dp"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="500dp"
                 android:layout_marginRight="0dp"
                 android:autofillHints=""
                 android:hint="@string/date_entry"
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/barCode"
-                android:layout_marginTop="550dp"
-                android:layout_marginLeft="-340dp"
-                android:layout_marginRight="0dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
-                android:text="@string/bar_code" />
+                android:layout_marginLeft="-320dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/bar_code"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/scanBarCode"
                 android:layout_width="250dp"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="550dp"
                 android:layout_marginRight="0dp"
@@ -177,30 +195,68 @@
                 android:textColorHint="#600C0A0A"
                 android:textSize="20sp" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dropdown_menu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-0dp"
+                    android:layout_marginTop="320dp"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_circle_24">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/add_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-0dp"
+                    android:layout_marginTop="320dp"
+                    android:src="@drawable/ic_baseline_add_circle_outline_24">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/dropdown_menu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginTop="415dp"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_circle_24">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/dropdown_menu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginTop="520dp"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_circle_24">
+
+
+                </ImageView>
+
+
+            </LinearLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                >
+
 
             </RelativeLayout>
 
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="-250dp"
-                android:layout_marginTop="600dp"
-                android:layout_marginEnd="-200dp"
-                android:backgroundTint="#4FB7C5"
-                android:textColorHighlight="#0D2C30"
-                android:textColorHint="#339BA8">
-
-            </Button>
 
         </LinearLayout>
-
-
-
-
     </ScrollView>
-
-
 </RelativeLayout>

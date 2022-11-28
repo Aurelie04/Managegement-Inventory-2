@@ -30,10 +30,12 @@
     <string name="enter_item_name">Enter item name</string>
     <string name="select_category">Select category</string>
     <string name="enter_purchase_price">Enter purchase price</string>
-    <string name="enter_quantity">Enter quantity</string>
-    <string name="enter_price_for_sale">Enter saling price</string>
-    <string name="date_entry">Date entry</string>
+    <string name="enter_quantity">Select quantity</string>
+    <string name="enter_price_for_sale">Enter selling price</string>
+    <string name="date_entry">Select date</string>
     <string name="scan_bar_code">Scan bar/QR code</string>
+    <string name="scan_button">scan</string>
+    <string name="dropdown_menu_qty">dropdown_menu2</string>
 
 
 </resources>
